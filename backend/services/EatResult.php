@@ -21,7 +21,7 @@ class EatResult
     public function setResult($id, $persantageEaten)
     {
         $appleService = new AppleService();
-        $this->result = $appleService->eate($id, $persantageEaten);
+        $this->result = $appleService->eat($id, $persantageEaten);
         if ($this->result === AppleStatus::CAN_NOT_EAT_ON_TREE){
             $this->isSuccess = 'danger';
             $this->message = AppleActionMessage::CAN_NOT_EAT_ON_TREE;

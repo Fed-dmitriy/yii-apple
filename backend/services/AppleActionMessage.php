@@ -19,7 +19,7 @@ class AppleActionMessage
     const FALL_To_GROUND_SUCCESS = 'Яблоко успешно упало';
     const ALREADY_ON_GROUND = 'Яблоко уже лежит на земле';
     const CHANGE_COLOR_SUCCESS = 'Цвет успешно изменен';
-    const CHANGE_COLOR_ERROR = 'Произошда ошибка при изменении цвета';
+    const CHANGE_COLOR_ERROR = 'Вы не ввели наименование цвета';
     const CAN_NOT_EAT_ON_TREE = 'К сожалению яблоко висит на дереве, его нельзя съесть. Надо чтобы оно упало';
     const CAN_NOT_EAT_SPOILED = 'К сожалению яблоко испортилось, его нельзя съесть';
     const EAT_SUCCESS = "Успешно откусили яблоко";

@@ -60,13 +60,18 @@ class AppleService
     //логика обработки действия "Изменить цвет яблока"
     public function changeColor($id, $changeColor)
     {
-        $apple = Apple:: findOne($id);
-        $apple->change_color = $changeColor;
-        $apple->save();
-        return true;
+        if(!$changeColor){
+            return false;
+        }else{
+            $apple = Apple:: findOne($id);
+            $apple->change_color = $changeColor;
+            $apple->save();
+            return true;
+        }
+
     }
     //логика обработки действия "Съесть яблоко", смотреть совместно с классом EatResult
-    public function eate($id, $percentageEaten)
+    public function eat($id, $percentageEaten)
     {
         $apple = Apple:: findOne($id);
         $apple->percentage_eaten = $percentageEaten;

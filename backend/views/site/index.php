@@ -73,7 +73,7 @@ foreach ($apples as $apple):
                     ['site/delete-apple-one', 'deleteAppleOne' => $apple->id]); ?></button>
         </div>
         <div class="btn-group" role="group" aria-label="Fifth group">
-            <?php $form = ActiveForm::begin(['action' => Url::to(['site/eate'])]); ?>
+            <?php $form = ActiveForm::begin(['action' => Url::to(['site/eat'])]); ?>
             <?= Html::submitButton('Откусить яблоко, %', ['class' => 'btn btn-success']) ?>
             <?= $form->field($apple,
                 'percentage_eaten')->label('')->textInput(['placeholder' => 'Откушено от яблока, %']); ?>

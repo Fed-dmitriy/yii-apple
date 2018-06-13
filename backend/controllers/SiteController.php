@@ -51,7 +51,7 @@ class SiteController extends Controller
                             'generate',
                             'fall-to-ground',
                             'delete-apple-one',
-                            'eate',
+                            'eat',
                             'change-color'
                         ],
                         'allow' => true,
@@ -138,12 +138,14 @@ class SiteController extends Controller
             $this->appleService->spoiledApple();
             if ($this->appleService->changeColor($id, $changeColor)){
                 Yii::$app->session->setFlash('success', AppleActionMessage::CHANGE_COLOR_SUCCESS);
+            }else{
+                Yii::$app->session->setFlash('danger', AppleActionMessage::CHANGE_COLOR_ERROR);
             }
         }
         return $this->redirect(['index']);
     }
     //съесть яблоко
-    public function actionEate()
+    public function actionEat()
     {
         if (Yii::$app->getRequest()->isPost) {
             $id = Yii::$app->request->post('Apple')['id'];
