@@ -39,7 +39,7 @@ class Apple extends ActiveRecord
     {
         //валидация формы вводимых данных
         return [
-            ['percentage_eaten', 'integer', 'message' =>'Должно быть число от 0 до 100', 'max'=>100, 'min'=>0],
+            ['percentage_eaten', 'integer', 'message' =>'Должно быть число до 100', 'max'=>100, 'min'=>0],
             ['change_color', 'match', 'pattern' => '/#[a-f0-9]{6}\b/i', 'message' =>'Цвет задается в формате HEX, например #ff9900'],
         ];
     }

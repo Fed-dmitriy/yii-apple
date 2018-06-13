@@ -24,5 +24,5 @@ class AppleActionMessage
     const CAN_NOT_EAT_SPOILED = 'К сожалению яблоко испортилось, его нельзя съесть';
     const EAT_SUCCESS = "Успешно откусили яблоко";
     const ATE_WHOLE_APPLE = 'Вы съели полностью яблоко';
-    const EATE_WRONG = 'Введено некорректное значение';
+    const EAT_WRONG = 'Введено некорректное значение, должно быть более 0 и менее 100';
 }

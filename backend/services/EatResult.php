@@ -34,9 +34,9 @@ class EatResult
         }elseif ($this->result === AppleStatus::ATE_WHOLE_APPLE){
             $this->isSuccess = 'danger';
             $this->message = AppleActionMessage::ATE_WHOLE_APPLE;
-        }elseif($this->result === AppleStatus::EATE_WRONG){
+        }elseif($this->result === AppleStatus::EAT_WRONG){
             $this->isSuccess = 'danger';
-            $this->message = AppleActionMessage::EATE_WRONG;
+            $this->message = AppleActionMessage::EAT_WRONG;
         }
     }
     //метод подготовки сообщения с полученными свойствами $this->isSuccess, $this->message в методе setResult()

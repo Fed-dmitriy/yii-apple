@@ -22,6 +22,6 @@ class AppleStatus
     const CAN_NOT_EAT_SPOILED = 2;//яблоко испортилось, нельзя съесть
     const EAT_SUCCESS = 3; //успешно откусили яблоко
     const ATE_WHOLE_APPLE = 4;//съели все яблоко
-    const EATE_WRONG = 4;
+    const EAT_WRONG = 5;
     
 }

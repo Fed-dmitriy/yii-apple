@@ -83,7 +83,7 @@ class AppleService
                 $apple->delete();
                 return AppleStatus::ATE_WHOLE_APPLE;
             }else{
-                return AppleStatus::EATE_WRONG;
+                return AppleStatus::EAT_WRONG;
             }
         }
     }
