@@ -20,8 +20,8 @@ class AppleStatus
     const INTERVAL = 5*60*60;//интервал времени в секундах через который яблоко испортится, в данном случае переводим 5 часов в секунды
     const CAN_NOT_EAT_ON_TREE = 1;//яблоко висити на дереве, нельзя съесть
     const CAN_NOT_EAT_SPOILED = 2;//яблоко испортилось, нельзя съесть
-    const EAT_SUCCESS = 3;
-    const ATE_WHOLE_APPLE = 4;
+    const EAT_SUCCESS = 3;//успешно откусили яблоко
+    const ATE_WHOLE_APPLE = 4;//съели все яблоко
     const EATE_WRONG = 4;
     
 }
