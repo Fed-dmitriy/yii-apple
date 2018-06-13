@@ -156,7 +156,6 @@ class SiteController extends Controller
         return $this->redirect(['index']);
     }
 
-
     public function actionIndex()
     {
         $apples = Apple::find()->all();
