@@ -18,10 +18,10 @@ class m180615_121724_create_apple_table extends Migration
             'date_fall_to_ground' => $this->dateTime()->notNull()->defaultValue('0000-00-00 00:00:00'),
             'status' => $this->tinyInteger('1')->null(),
             'spoiled_apple' => $this->tinyInteger('1')->null(),
-            'percentage_eaten' => $this->integer('3')->notNull(),
+            'percentage_eaten' => $this->integer('3'),
             'r_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
             'g_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
-            'b_rgb' => $this->tinyInteger('3')->unsigned(),
+            'b_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
             'change_color' => $this->string('11'),
         ]);
     }
