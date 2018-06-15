@@ -21,16 +21,15 @@ class m180615_121724_create_aple_table extends Migration
             'percentage_eaten' => $this->integer('3')->notNull(),
             'r_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
             'g_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
-            'b_rgb' => $this->tinyInteger('3')->unsigned()->notNull(),
-            'change_color' => $this->string('10'),
+            'b_rgb' => $this->tinyInteger('3')->unsigned(),
+            'change_color' => $this->string('11'),
         ]);
     }
-
     /**
      * {@inheritdoc}
      */
     public function safeDown()
     {
-        $this->dropTable('aple');
+        $this->dropTable('apple');
     }
 }
